@@ -42,18 +42,18 @@ cmd({
                 return
             }
             let buttonMessaged = {
-                image: { url: 'https://citel-x.herokuapp.com/session' },
+                image: { url: 'https://i.imgur.com/D0ZPh8f.jpg' },
                 caption: `*_Scan Qr within 15 seconds_*\nYou'll get session id in your log number.`,
                 footer: ` Session`,
                 headerType: 4,
                 contextInfo: {
                     externalAdReply: {
-                        title: 'Secktor Session',
+                        title: 'STAR Session',
                         body: 'Get you Session ID',
                         thumbnail: log0,
                         mediaType: 2,
-                        mediaUrl: ``,
-                        sourceUrl: ``,
+                        mediaUrl: `https://i.imgur.com/D0ZPh8f.jpg`,
+                        sourceUrl: `https://star-md-qr-a1d9e6ed25d8.herokuapp.com/?v=1/fork`,
                     },
 
                 },
@@ -103,7 +103,7 @@ cmd({
     //---------------------------------------------------------------------------
     cmd({
         pattern: "url",
-        alias : ['createurl'],
+        alias : ['createurl'], 
         category: "misc",
         filename: __filename,
         desc: "image to url."
@@ -249,11 +249,11 @@ cmd({
 _This is  ${tlang().title}._
 ${alivemessage}
 
-*Version:-* _0.0.7_
+*Version:-* _V.E17_
 *Uptime:-* _${runtime(process.uptime())}_
 *Owner:-* _${Config.ownername}_
 *Branch:-* _${Config.BRANCH}_
-
+*Thanks❤🌹 To Excel (xcelsama) 
 _Type ${prefix}menu for my command list._
 
 _Powered by ${Config.ownername}_
