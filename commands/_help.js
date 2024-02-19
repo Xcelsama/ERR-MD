@@ -24,7 +24,7 @@ Secktor.cmd({
             alias: ["menu"],
             desc: "Help list",
             category: "general",
-            react: "✨",
+            react: "💻",
             filename: __filename
         },
         async(Void, citel, text) => {
@@ -32,7 +32,7 @@ Secktor.cmd({
             if (text.split(" ")[0]) {
                 let arr = [];
                 const cmd = commands.find((cmd) => cmd.pattern === (text.split(" ")[0].toLowerCase()))
-                if (!cmd) return await citel.reply("*❌No Such commands.*");
+                if (!cmd) return await citel.reply("*Opps No Such commands.*");
                 else arr.push(`*🍁Command:* ${cmd.pattern}`);
                 if (cmd.category) arr.push(`*🧩Category:* ${cmd.category}`);
                 if (cmd.alias) arr.push(`*🧩Alias:* ${cmd.alias}`);
@@ -59,13 +59,15 @@ Secktor.cmd({
 │ │ User:- ${citel.pushName}
 │ │ Theme:- ${tlang().title}
 │ │ Prefix:- [ ${prefix} ]
+│ │ Founder:- Excel Amadi
 │ │ Owner:- ${Config.ownername}
 │ │ Plugins:- ${commands.length}
 │ │ Users:- ${total}
 │ │ Uptime:- ${runtime(process.uptime())}
 │ │ Mem:- ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
 │ │ Time:- ${time}
-│ │ Date:- ${date}
+│ │Date:- ${date}
+│ │ ⭐STAR-MD⭐
 │ ╰──────────────◆
 ╰───────────────⊷\n
 ` + '```'
@@ -82,7 +84,7 @@ Secktor.cmd({
                    }
   
                 }
-                str+= `*⭐️Type:* _${prefix}help cmd_ name to know more about specific command.\n*Eg:* _${prefix}help attp_\n*Made with ❤️ in Nodejs* `
+                str+= `*⭐️Type:* _${prefix}help cmd_ name to know more about specific command.\n*Eg:* _${prefix}help ping_\n*Made By Excel💻* `
                 let buttonMessaged = {
                     image: { url: await botpic() },
                     caption: str
@@ -92,7 +94,7 @@ Secktor.cmd({
         }
     )
     //---------------------------------------------------------------------------
-Secktor.cmd({
+Star.cmd({
             pattern: "list",
             desc: "list menu",
             category: "general"
@@ -104,13 +106,14 @@ Secktor.cmd({
             str += `
 ┃ ⛥╭──────────────      
 ┃ ⛥│ User: ${citel.pushName}
+┃ ⛥│ Founder:-Excel Amadi
 ┃ ⛥│ Theme: ${tlang().title}
 ┃ ⛥│ Prefix: ${prefix}
 ┃ ⛥│ Owner: ${Config.ownername}
 ┃ ⛥│ Commands: ${commands.length}
 ┃ ⛥│ Uptime: ${runtime(process.uptime())}
 ┃ ⛥│ Mem: ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
-┃ ⛥│  
+┃ ⛥│  ⭐STAR-MD⭐
 ┃ ⛥╰───────────
 ╰━━━━━━━━━━━──⊷\n`
 for (let i = 0; i < commands.length; i++) 
@@ -128,7 +131,7 @@ Secktor.cmd({
         pattern: "owner",
         desc: "To find owner number",
         category: "general",
-        react: "💜",
+        react: "💻",
         filename: __filename
     },
     async(Void, citel) => {
@@ -165,7 +168,7 @@ Secktor.cmd({
     pattern: "file",
     desc: "to get extact name where that command is in repo.\nSo user can edit that.",
     category: "general",
-    react: "✨",
+    react: "📂",
     filename: __filename
 },
 async(Void, citel, text) => {
