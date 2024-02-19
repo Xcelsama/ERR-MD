@@ -52,7 +52,7 @@ if (mime =="imageMessage" || mime =="stickerMessage")
 cmd({
          pattern: "vv",
          alias : ['viewonce','retrive'],
-         desc: "Flips given text.",
+         desc: "Reveals view once image/vid.",
          category: "misc",
          use: '<query>',
          filename: __filename
@@ -161,8 +161,8 @@ cmd({
             pattern: "fancy",
             desc: "Makes stylish/fancy given text",
             category: "converter",
-            use: '56 Secktor',
-            react: "✅",
+            use: '56 STAR',
+            react: "⭐",
             filename: __filename
         },
         async(Void, citel, text) => {
@@ -187,7 +187,7 @@ cmd({
             desc: "Makes url tiny.",
             category: "converter",
             use: '<url>',
-            react: "✅",
+            react: "⭐",
             filename: __filename
         },
         async(Void, citel, text) => {
@@ -207,7 +207,7 @@ cmd({
         alias: ["circlestic","circlesticker","cs"],
         desc: "Makes sticker of replied image/video.",
         category: "sticker",
-filename: __filename,
+filename: __filename, 
         use: '<reply to any image/video.>'
     },
     async(Void, citel, text) => {
